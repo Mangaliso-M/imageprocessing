@@ -32,4 +32,5 @@ color_rocket = color.gray2rgb(rgb_rocket)
 #now display the recoverted image, since color is not preserved in the conversion, the new color image is in fact black and white
 show_image(color_rocket) 
 
-print("Lesson 1, done.")
+print("Lesson 1, done. ")
+print("The branch with lessons from the datacamp are on the fromlesson branch")
