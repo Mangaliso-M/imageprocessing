@@ -9,11 +9,6 @@ import matplotlib.pyplot as plt
 #load rocket image, found in the library
 rocket_image = data.rocket()
 
-#covert the image to grayscale
-#grayscale = color.rgb2gray(original)
-
-#convert grayscale to rgb
-#rgb = color.gray2rgb(grayscale)
 
 #the show image function
 def show_image(image, title='Image', cmap_type='gray'):
@@ -31,7 +26,10 @@ show_image(color.rgb2gray(rocket_image), "gray rocket image")
 #covert the gray scale image of the rockect to the original color, and display
 rgb_rocket = color.rgb2gray(rocket_image)
 
+#convert a color image to a grayscale image
 color_rocket = color.gray2rgb(rgb_rocket)
 
 #now display the recoverted image, since color is not preserved in the conversion, the new color image is in fact black and white
 show_image(color_rocket) 
+
+print("Lesson 1, done.")
