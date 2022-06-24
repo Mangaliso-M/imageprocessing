@@ -1,6 +1,6 @@
 
 #Author: Mangaliso M Mngomezulu
-#desc: Datacamp image processing course
+#desc: this program shows how to retrieve image data from a library(the rocket image) and display it, also change it to grayscale 
 
 from skimage import data
 from skimage import color
@@ -30,7 +30,7 @@ rgb_rocket = color.rgb2gray(rocket_image)
 color_rocket = color.gray2rgb(rgb_rocket)
 
 #now display the recoverted image, since color is not preserved in the conversion, the new color image is in fact black and white
-show_image(color_rocket) 
+show_image(color_rocke,"From gray scale") 
 
 print("Lesson 1, done. ")
 print("The branch with lessons from the datacamp are on the fromlesson branch")
