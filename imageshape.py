@@ -16,7 +16,7 @@ chelsea_image = skimage.data.cat()  #color image
 cell_image = skimage.data.cell() # cell image
 
 #get the shape of the matrix
-print("colored chelesea image shape:", numpy.shape(chelsea_image))
+print("colored chelesea image shape:", numpy.shape(chelsea_image)) #height width thickness
 
 #get the shape of the grayscale image
 print("Grayscale coins image shape:", numpy.shape(cell_image))
@@ -24,3 +24,11 @@ print("Grayscale coins image shape:", numpy.shape(cell_image))
 #display the images for confirmation
 show_image(chelsea_image, "Chelsea the cat")
 show_image(cell_image, "Cell image")
+
+#flip the image vertically
+flipped_cat = numpy.flipud(chelsea_image)
+show_image(flipped_cat, "flipped cat image")
+
+#flip the image horizontally
+flipped_cat = numpy.fliplr(chelsea_image)
+show_image(flipped_cat,"horizontally flipped cat")
