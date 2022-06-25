@@ -19,7 +19,7 @@ cell_image = skimage.data.cell() # cell image
 print("colored chelesea image shape:", numpy.shape(chelsea_image)) #height width thickness
 
 #get the shape of the grayscale image
-print("Grayscale coins image shape:", numpy.shape(cell_image))
+#print("Grayscale coins image shape:", numpy.shape(cell_image))
 
 #display the images for confirmation
 show_image(chelsea_image, "Chelsea the cat")
