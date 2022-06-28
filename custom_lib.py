@@ -6,7 +6,7 @@ def plot_comparison(original, filtered, title_filtered):
     img1.imshow(original, cmap=plt.cm.gray)
     img1.set_title('Original image')
     img1.axis('off')
-
+   
     img2.imshow(filtered, cmap=plt.cm.gray)
     img2.set_title(title_filtered)
     img2.axis('off')
