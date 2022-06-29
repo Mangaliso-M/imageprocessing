@@ -13,7 +13,6 @@ canny_edges = canny(coins)
 
 show_image(canny_edges,"Canny Edge Detection (sigma = 1 by default?)")
 
-
 #apply the canny edge detector with varying values, the sigma attribute in the canny edge detector makes it a Gaussian Edge Detector
 #higher sigma values remove more noise
 canny_edges_0_6 = canny(coins, sigma=0.6)
