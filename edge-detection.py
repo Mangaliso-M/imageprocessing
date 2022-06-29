@@ -11,6 +11,7 @@ coins = data.coins()
 #coins = color.rgb2gray(coins), already rgb
 canny_edges = canny(coins)
 
+#display results
 show_image(canny_edges,"Canny Edge Detection (sigma = 1 by default?)")
 
 #apply the canny edge detector with varying values, the sigma attribute in the canny edge detector makes it a Gaussian Edge Detector
