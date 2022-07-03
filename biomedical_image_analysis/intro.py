@@ -5,4 +5,6 @@
 
 import imageio #it can also read .dcm files, which is the common format for medical images
 
-im = imageio.imread('body-001.dcm')
+#the data used was locally refrenced
+im = imageio.imread('../datasets/tcia-chest-ct-sample/chest-220.dcm')
+
