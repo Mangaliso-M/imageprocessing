@@ -20,3 +20,17 @@ for ax in axes:
 
 #now display the figure
 plt.show()
+
+
+#alternatives for slicing volmetric data into 2d images for display
+view_a = vol[0, :, :] #one image (2nd vs 3rd)
+view_b = vol[ :0, :] #one image (1st vs 3rd)
+view_c = vol[ :, :0] #one image (1st vs 2nd)
+#view_a = vol[0] #one image
+
+#print(view_a.shape)
+#plt.imshow(view_a)
+#plt.show()
+
+#modifying the aspect ratio
+#it happens that the images donot have the same dimensions, yet we want to stack them. So the procedure is to stretch the pixels on one side so that the images can be compatible fo
