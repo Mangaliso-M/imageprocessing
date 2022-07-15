@@ -6,7 +6,7 @@ import scipy.ndimage as ndi
 import matplotlib.pyplot as plt
 
 image = imageio.imread('./datasets/sunnybrook-cardiac-mr/SCD2001_005')
-
+  
 #apply a gaussian filter on the image
 filt = ndi.gaussian_filter(image, sigma=2)
 
@@ -20,7 +20,7 @@ labels, nlabels = ndi.label(mask) #nlables shows how many segmented elements are
 plt.imshow(labels, cmap='rainbow')
 plt.title('SunnyBrok Cardiac .. Data')
 plt.show()
-
+       
 #one can select individual labels from labels i.e
 #np.where(labels -- 1, image, 0)
 
