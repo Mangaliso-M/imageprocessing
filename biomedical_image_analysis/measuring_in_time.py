@@ -25,7 +25,7 @@ d0,d1,d2,d3 = vol.meta['sampling'] #vol is to be made up from dicom images
 dxovel = d1 * d2 * d3
 
 #Instantiate an empty list
-ts = np.zeors(20)
+ts = np.zeros(20)
 
 for t in range(20):
     nvoxels = ndi.sum(1, labels[t],index=1)
