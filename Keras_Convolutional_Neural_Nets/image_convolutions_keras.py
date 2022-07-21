@@ -16,11 +16,8 @@ model.add(Conv2D(10, kernel_size=3, activation='relu', input_shape=(img_rows, im
 
 #Flattern serves as a connection between Convolution and Densely connected layers
 model.add(Flatten()) #takes the output of the convolution,flatterns it into a 1 dimensional array then makes it ready for the next layer to absorb
-
 #in this case the output is one of 3 classes of clothing, 3 units are then used to handle that
 model.add(Dense(3, activation='softmax'))
-
-
 #now that the model architecture is complete, compile the model
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
